@@ -1,0 +1,675 @@
+:(
+:-(
+abandoned
+abeled
+abused
+accused
+addicted
+afraid
+aggravated
+aggressive
+alone
+an issue
+angered
+angry
+anguish
+annoyed
+annoying
+anooying
+anti
+anti-women
+anxiety
+anxious
+apprehensive
+aren't
+argumentative
+arrogant
+artificial
+ashamed
+assaulted
+at a loss
+at risk
+atrocious
+attacked
+avoided
+awful
+awkward
+bad
+bad quality
+badgered
+baffled
+banned
+barren
+beat
+beaten down
+belittled
+berated
+betrayed
+bewildered
+bitched at
+bitter
+bizzare
+blacklisted
+blackmailed
+blamed
+bleak
+blown away
+blues
+blur
+bored
+boring
+bossed-around
+bothered
+bothersome
+bounded
+boxed-in
+brainwashed
+broken
+bruised
+brushed-off
+bugged
+buggy
+bullied
+bullshit
+bummed
+bummed out
+burdened
+burdensome
+burned
+burned-out
+caged in
+can't send
+careless
+chaotic
+chased
+cheated
+cheated on
+chicken
+claustrophobic
+clingy
+closed
+clueless
+clumsy
+coaxed
+codependent
+coerced
+cold
+cold-hearted
+combative
+commanded
+commie
+communist
+compared
+competitive
+completely wrong
+compulsive
+conceited
+concerned
+condemned
+condescended to
+confined
+conflicted
+confronted
+confused
+conned
+consumed
+contemplative
+contempt
+contentious
+controlled
+convicted
+cornered
+corralled
+cowardly
+crabby
+cramped
+cranky
+crap
+crappy
+crazy
+creeped out
+creepy
+critical
+criticized
+cross
+crowded
+cruddy
+cruel
+crummy
+crushed
+cut-down
+cut-off
+cynical
+damaged
+damn
+damned
+dangerous
+dark
+dazed
+dead
+deceived
+deep
+defamed
+defeated
+defective
+defenseless
+defensive
+defiant
+deficient
+deflated
+degraded
+dehumanized
+dejected
+delicate
+deluded
+demanding
+demeaned
+demented
+demoralized
+demotivated
+dependent
+depleted
+depraved
+depressed
+deprived
+deserted
+deserving of pain
+deserving of punishment
+desolate
+despair
+despairing
+desperate
+despicable
+despise
+despised
+destroyed
+destructive
+detached
+detest
+detestable
+detested
+devalued
+devastated
+deviant
+devoid
+diagnosed
+dictated to
+didn't last
+different
+difficult
+directionless
+dirty
+disabled
+disagreeable
+disappointed
+disappointing
+disapproved of
+disbelieved
+discardable
+discarded
+disconnected
+discontent
+discouraged
+discriminated
+disdain
+disdainful
+disempowered
+disenchanted
+disgraced
+disgruntled
+disgust
+disgusted
+disheartened
+dishonest
+dishonorable
+disillusioned
+dislike
+disliked
+dismal
+dismayed
+disorganized
+disoriented
+disowned
+displeased
+disposable
+disregarded
+disrespected
+dissapointing
+dissatisfied
+distant
+distracted
+distraught
+distressed
+disturbed
+dizzy
+doesn't recommend
+dominated
+don't like
+don't support
+doomed
+double-crossed
+doubted
+doubtful
+down
+down and out
+down in the dumps
+downhearted
+downtrodden
+drained
+dramatic
+dread
+dreadful
+dreary
+drop dead
+dropped
+drunk
+dry
+duh
+dull
+dumb
+dumbfounding
+dumbifying
+dumped
+dumped on
+duped
+duplicity
+edgy
+egocentric
+egotistic
+egotistical
+elusive
+emancipated
+emasculated
+embarrassed
+emotional
+emotionally bankrupt
+emotionless
+empty
+encumbered
+endangered
+enraged
+enslaved
+entangled
+envious
+evaded
+evasive
+evicted
+evil
+excessive
+excluded
+exhausted
+expensive
+exploited
+exposed 
+fail
+failful
+failing
+fake
+fallen
+fallen behind
+fallen way behind
+false
+fear
+fearful
+fed up
+fierce
+flailing
+flawed
+flipped-out
+foolish
+forced
+forgetful
+forgettable
+forgotten
+fragile
+frantic
+freaked out
+frickin
+frightened
+frigid
+frothing
+frustrated
+ftl
+fucking up
+fuming
+fuming and frothing
+furious
+get killed by
+gloomy
+glum
+got killed by
+gothic
+grey
+grief
+grieving
+grim
+gross
+grossed-out
+grotesque
+grouchy
+grounded
+grumpy
+guilt-tripped
+guilty
+harassed
+hard
+hard-hearted
+harmed
+hassled
+hate
+hated us
+hateful
+hatred
+haunted
+headache
+heartbroken
+heartless
+heavy
+heavy-hearted
+helpless
+hesitant
+hideous
+hindered
+hindrance
+homeless
+hopeless
+horrible
+horrified
+horrifying
+horror
+hostile
+hot-tempered
+humiliated
+hung over
+hung up
+hungry
+hunker down
+hurried
+hurt
+hypocrisy
+hysterical
+i hate
+idiotic
+ignorant
+ignored
+ill
+ill-tempered
+imbalanced
+imposed-upon
+impotent
+imprisoned
+impulsive
+in a bad way
+in the dumps
+in the way
+inactive
+inadequate
+incapable
+incommunicative
+incompatible
+incompetent
+incomplete
+incorrect
+indecisive
+indifferent
+indoctrinated
+inebriated
+ineffective
+inefficient
+inferior
+infuriated
+inhibited
+inhumane
+injured
+injusticed
+insane
+insecure
+insignificant
+insincere
+insufficient
+insulted
+intense
+interrogated
+interrupted
+intimidated
+intoxicated
+invalidated
+invisible
+irrational
+irritable
+irritated
+irritating
+is a fool
+is great until
+isolated
+itchy
+jaded
+jealous
+jerk
+jerked around
+jittery
+joyless
+judged
+kept apart
+kept away
+kept in
+kept out
+kept quiet
+knee jerk
+lame
+laughable
+laughed at
+lazy
+leaned on
+lectured to
+left out
+let down
+lied about
+lied to
+limited
+little
+lonely
+lonesome
+longing
+lose
+lost
+lousy
+loveless
+low
+lying
+mad
+made fun of
+man handled
+manipulated
+masochistic
+messed up
+messed with
+messy
+miffed
+miserable
+misled
+mistaken
+mistreated
+mistrusted
+misunderstood
+mixed-up
+mocked
+molested
+moody
+must die
+must have ie
+mysterious
+nagged
+nasty
+naughty
+needy
+negative
+nervous
+neurotic
+no more
+nobody spoke
+noise
+nonconforming
+not as good
+not impressed
+not reliable
+not that good
+not working
+nothing is
+numb
+nuts
+nutty
+objectified
+obligated
+obnoxious
+obsessed
+obsessive
+obstructed
+odd
+offended
+on display
+only works in safari
+opposed
+oppressed
+out of place
+out of touch
+outrageous
+over-controlled
+over-protected
+overwhelmed
+pain
+painful
+panic
+panicky
+paranoid
+passive
+pathetic
+pessimistic
+pet peeve
+pet peeves
+petrified
+phony
+picked on
+pissed
+pissed off
+plain
+played with
+pooped
+poor
+poorly
+pos
+powerless
+pre-judged
+preached to
+predjudiced
+preoccupied
+pressured
+problems
+prosecuted
+provoked
+psychopathic
+psychotic
+pulled apart
+pulled back
+punished
+pushed
+pushed away
+put down
+puzzled
+pw
+pwnd
+pwning
+pwns
+quarrelsome
+queer
+questioned
+quiet
+rage
+rape
+raped
+rattled
+reactionist
+regret
+rejected
+repulsive
+resented
+resentful
+responsible
+retarded
+revengeful
+ridiculed
+ridiculous
+robbed
+rotten
+sad
+sad news
+sadistic
+sarcastic
+scared
+scarred
+scary
+screwed
+screwed over
+screwed up
+self-centered
+self-conscious
+self-deprecating
+self-destructive
+self-hatred
+selfish
+sensitive
+shouted at
+shy
+singled-out
+slow
+small
+smartass
+smear
+smothered
+snapped at
+snooty
+so terrible
+socialist
+sore
+spiteful
+stereotyped
+sting
+stomach it
+strange
+stressed
+stretched
+stuck
+stupid
+submissive
+suck
+sucks
+suffering
+suffocated
+suicidal
+superficial
+suppressed
+suspicious
+tense
+terrible
+testy
+thanks
+the worst
+thoughtless
+tired
+too bad
+too slow
+trouble
+troubled
+ugly
+unusable
+upset
+uptight
+weary
+wicked
+won't
+wont
+worried
+worst
+wrong
+wtf
+yell

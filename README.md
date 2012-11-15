@@ -1,4 +1,3 @@
 twitter-sentiment-analyzer
 ==========================
-
-Twitter Sentiment Analyzer
+<p> Take a look at simpleDemo.py for a demo </p>
