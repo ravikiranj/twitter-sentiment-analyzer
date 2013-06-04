@@ -1,0 +1,6 @@
+GPL v2 license
+==============
+Please feel free to do whatever you want with this.
+a) As long as you give me credit for my work.
+b) As long as you make the source code available to anyone you distribute whatever you build on top of my work to.
+c) As long as you extend these same rights to those who you distribute to.
