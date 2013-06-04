@@ -91,10 +91,8 @@ def extract_features(tweet):
 
 #Read the tweets one by one and process it
 inpTweets = csv.reader(open('data/sampleTweets.csv', 'rb'), delimiter=',', quotechar='|')
-st = open('data/feature_list/stopwords.txt', 'r')
 stopWords = getStopWordList('data/feature_list/stopwords.txt')
 featureList = getFeatureList('data/sampleTweetFeatureList.txt')
-pp = pprint.PrettyPrinter()
 count = 0;
 tweets = []
 for row in inpTweets:
