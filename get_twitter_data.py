@@ -1,12 +1,18 @@
+import argparse
 import urllib
 import urllib2
 import json
 import datetime
 import random
+import os
 import pickle
 from datetime import timedelta
 
+import oauth2
+
+
 class TwitterData:
+
     #start __init__
     def __init__(self):
         self.currDate = datetime.datetime.now()
@@ -46,35 +52,69 @@ class TwitterData:
         return self.weekTweets
     '''
     #end
+    
+    def parse_config(self):
+      config = {}
+      # from file args
+      if os.path.exists('config.json'):
+        with open('config.json') as f:
+          config.update(json.load(f))
+      # may be from command line
+      parser = argparse.ArgumentParser()
+      parser.add_argument('--consumer-key', default=None, help='Your developper `Consumer Key`')
+      parser.add_argument('--consumer-secret', default=None, help='Your developper `Consumer Secret`')
+      parser.add_argument('--access-token', default=None, help='A client `Access Token`')
+      parser.add_argument('--access-token-secret', default=None, help='A client `Access Token Secret`')
+      # make it compatible with samples
+      parser.add_argument('extra', default=None)
+      args_ = parser.parse_args()
+      def val(key):
+        return config.get(key)\
+               or getattr(args_, key)\
+               or raw_input('Your developper `%s`: ' % key)
+      config.update({
+        'consumer_key': val('consumer_key'),
+        'consumer_secret': val('consumer_secret'),
+        'access_token': val('access_token'),
+        'access_token_secret': val('access_token_secret'),
+      })
+      # should have something now
+      return config
 
+    def oauth_req(self, url, http_method="GET", post_body=None,
+                  http_headers=None):
+      config = self.parse_config()
+      consumer = oauth2.Consumer(key=config.get('consumer_key'), secret=config.get('consumer_secret'))
+      token = oauth2.Token(key=config.get('access_token'), secret=config.get('access_token_secret'))
+      client = oauth2.Client(consumer, token)
+   
+      resp, content = client.request(
+          url,
+          method=http_method,
+          body=post_body or '',
+          headers=http_headers
+      )
+      return content
+    
     #start getTwitterData
     def getData(self, keyword, params = {}):
         maxTweets = 50
-        url = 'http://search.twitter.com/search.json'    
-        data = {'q': keyword, 'lang': 'en', 'page': '1', 'result_type': 'recent', 'rpp': maxTweets, 'include_entities': 0}
+        url = 'https://api.twitter.com/1.1/search/tweets.json?'    
+        data = {'q': keyword, 'lang': 'en', 'result_type': 'recent', 'count': maxTweets, 'include_entities': 0}
 
         #Add if additional params are passed
         if params:
             for key, value in params.iteritems():
                 data[key] = value
         
-        params = urllib.urlencode(data)        
-        try:            
-            req = urllib2.Request(url, params)
-            response = urllib2.urlopen(req)  
-            jsonData = json.load(response)
-            tweets = []
-            for item in jsonData['results']:
-                tweets.append(item['text'])            
-            return tweets
-        except urllib2.URLError, e:
-            self.handleError(e)         
+        url += urllib.urlencode(data)
+        
+        response = self.oauth_req(url)
+        jsonData = json.loads(response)
+        tweets = []
+        for item in jsonData['statuses']:
+            tweets.append(item['text'])            
+        return tweets      
     #end    
 
-    #start handleError
-    def handleError(self, e):
-        print e.code
-        print e.read()
-        return -1
-    #end
 #end class
