@@ -57,27 +57,28 @@ class TwitterData:
       config = {}
       # from file args
       if os.path.exists('config.json'):
-        with open('config.json') as f:
-          config.update(json.load(f))
-      # may be from command line
-      parser = argparse.ArgumentParser()
-      parser.add_argument('--consumer-key', default=None, help='Your developper `Consumer Key`')
-      parser.add_argument('--consumer-secret', default=None, help='Your developper `Consumer Secret`')
-      parser.add_argument('--access-token', default=None, help='A client `Access Token`')
-      parser.add_argument('--access-token-secret', default=None, help='A client `Access Token Secret`')
-      # make it compatible with samples
-      parser.add_argument('extra', default=None)
-      args_ = parser.parse_args()
-      def val(key):
-        return config.get(key)\
-               or getattr(args_, key)\
-               or raw_input('Your developper `%s`: ' % key)
-      config.update({
-        'consumer_key': val('consumer_key'),
-        'consumer_secret': val('consumer_secret'),
-        'access_token': val('access_token'),
-        'access_token_secret': val('access_token_secret'),
-      })
+          with open('config.json') as f:
+              config.update(json.load(f))
+      else:
+          # may be from command line
+          parser = argparse.ArgumentParser()
+
+          parser.add_argument('-ck', '--consumer_key', default=None, help='Your developper `Consumer Key`')
+          parser.add_argument('-cs', '--consumer_secret', default=None, help='Your developper `Consumer Secret`')
+          parser.add_argument('-at', '--access_token', default=None, help='A client `Access Token`')
+          parser.add_argument('-ats', '--access_token_secret', default=None, help='A client `Access Token Secret`')
+
+          args_ = parser.parse_args()
+          def val(key):
+            return config.get(key)\
+                   or getattr(args_, key)\
+                   or raw_input('Your developper `%s`: ' % key)
+          config.update({
+            'consumer_key': val('consumer_key'),
+            'consumer_secret': val('consumer_secret'),
+            'access_token': val('access_token'),
+            'access_token_secret': val('access_token_secret'),
+          })
       # should have something now
       return config
 
@@ -112,8 +113,12 @@ class TwitterData:
         response = self.oauth_req(url)
         jsonData = json.loads(response)
         tweets = []
-        for item in jsonData['statuses']:
-            tweets.append(item['text'])            
+        if 'errors' in jsonData:
+            print "API Error"
+            print jsonData['errors']
+        else:
+            for item in jsonData['statuses']:
+                tweets.append(item['text'])            
         return tweets      
     #end    
 

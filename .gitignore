@@ -34,8 +34,8 @@ nosetests.xml
 .project
 .pydevproject
 
-# Oauth config
-config.json
+# Oauth config - uncommented for sample usage
+# config.json
 
 # Picled
 *.pickle
