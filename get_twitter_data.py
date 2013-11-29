@@ -7,12 +7,9 @@ import random
 import os
 import pickle
 from datetime import timedelta
-
 import oauth2
 
-
 class TwitterData:
-
     #start __init__
     def __init__(self):
         self.currDate = datetime.datetime.now()
