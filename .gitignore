@@ -33,3 +33,9 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Oauth config
+config.json
+
+# Picled
+*.pickle
