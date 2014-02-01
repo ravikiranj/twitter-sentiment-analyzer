@@ -66,19 +66,6 @@ def getFeatureVector(tweet, stopWords):
     return featureVector    
 #end
 
-#start getFeatureList
-def getFeatureList(fileName):
-    fp = open(fileName, 'r')
-    line = fp.readline()
-    featureList = []
-    while line:
-        line = line.strip()
-        featureList.append(line)
-        line = fp.readline()
-    fp.close()
-    return featureList
-#end
-
 #start extract_features
 def extract_features(tweet):
     tweet_words = set(tweet)
@@ -92,19 +79,23 @@ def extract_features(tweet):
 #Read the tweets one by one and process it
 inpTweets = csv.reader(open('data/sampleTweets.csv', 'rb'), delimiter=',', quotechar='|')
 stopWords = getStopWordList('data/feature_list/stopwords.txt')
-featureList = getFeatureList('data/sampleTweetFeatureList.txt')
 count = 0;
+featureList = []
 tweets = []
 for row in inpTweets:
     sentiment = row[0]
     tweet = row[1]
     processedTweet = processTweet(tweet)
     featureVector = getFeatureVector(processedTweet, stopWords)
+    featureList.extend(featureVector)
     tweets.append((featureVector, sentiment));
 #end loop
 
+# Remove featureList duplicates
+featureList = list(set(featureList))
+
+# Generate the training set
 training_set = nltk.classify.util.apply_features(extract_features, tweets)
-#pp.pprint(training_set)
 
 # Train the Naive Bayes classifier
 NBClassifier = nltk.NaiveBayesClassifier.train(training_set)
