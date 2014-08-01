@@ -18,7 +18,7 @@ def processTweet(tweet):
     #Convert to lower case
     tweet = tweet.lower()
     #Convert www.* or https?://* to URL
-    tweet = re.sub('((www\.[\s]+)|(https?://[^\s]+))','URL',tweet)
+    tweet = re.sub('((www\.[^\s]+)|(https?://[^\s]+))','URL',tweet)
     #Convert @username to AT_USER
     tweet = re.sub('@[^\s]+','AT_USER',tweet)    
     #Remove additional white spaces
